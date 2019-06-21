@@ -4,3 +4,4 @@
 20190621,在主页面添加了fragment，fragment里有recyclerview
 #062101 将背景item添加到法让recyclerview里。
 #062102 recyclerview横向滚动;图标名改为ECoach。
+#062103 设置横屏

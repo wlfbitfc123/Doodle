@@ -1,6 +1,7 @@
 package cn.hzw.doodledemo;
 
 import android.app.Activity;
+import android.content.pm.ActivityInfo;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -126,5 +127,15 @@ public class MainActivity extends AppCompatActivity {
         transaction.replace(R.id.recycler_layout,fragment);
         transaction.commit();
 
+    }
+    @Override
+    protected void onResume() {
+        /**
+         * 设置为横屏
+         */
+        if(getRequestedOrientation()!= ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE){
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        }
+        super.onResume();
     }
 }
