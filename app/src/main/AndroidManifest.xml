@@ -5,10 +5,11 @@
     <application
         android:name=".DemoApplication"
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/ic_wlf1"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.NoTitleBar">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
