@@ -4,6 +4,7 @@ import android.animation.ValueAnimator;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
@@ -182,7 +183,8 @@ public class DoodleActivity extends Activity {
         }
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.doodle_layout);
+        //setContentView(R.layout.doodle_layout);
+        setContentView(R.layout.doodle_layout_orientation);//wlf 0621
         mFrameLayout = (FrameLayout) findViewById(R.id.doodle_container);
 
         /*
@@ -997,6 +999,20 @@ public class DoodleActivity extends Activity {
                 }
             }
         }
+    }
+
+    /*
+    wlf 0621
+     */
+    @Override
+    protected void onResume() {
+        /**
+         * 设置为横屏
+         */
+        if(getRequestedOrientation()!= ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE){
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        }
+        super.onResume();
     }
 
 }

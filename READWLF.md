@@ -5,3 +5,4 @@
 #062101 将背景item添加到法让recyclerview里。
 #062102 recyclerview横向滚动;图标名改为ECoach。
 #062103 设置横屏
+#062104 设置DoodleActivity.java的横屏。
