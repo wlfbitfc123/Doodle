@@ -43,23 +43,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         replaceFragment(new recyclerviewFragment());//wlf 0621
 
-        /*
-        wlf 0620
 
-       // initBackground();
-        recyclerviewFragment recyclerviewFragment = (RecyclerView) getSupportFragmentManager()
-            .findFragmentById(R.id.recycler_view);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(layoutManager);
-        backgroundAdapter adapter = new backgroundAdapter(backgroundList);
-        recyclerView.setAdapter(adapter);
         findViewById(R.id.btn_select_image).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ImageSelectorActivity.startActivityForResult(REQ_CODE_SELECT_IMAGE, MainActivity.this, null, false);
             }
         });
-         */
+
         /*
         findViewById(R.id.btn_guide).setOnClickListener(new View.OnClickListener() {
             @Override

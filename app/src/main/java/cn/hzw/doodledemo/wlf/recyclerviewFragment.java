@@ -29,6 +29,7 @@ public class recyclerviewFragment extends Fragment {
         RecyclerView recyclerView = (RecyclerView)view.findViewById(R.id.recycler_view);
         LinearLayoutManager layoutManager = new LinearLayoutManager(view.getContext());
         recyclerView.setLayoutManager(layoutManager);
+        layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         backgroundAdapter adapter = new backgroundAdapter(backgroundList);
         recyclerView.setAdapter(adapter);
         return view;

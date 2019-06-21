@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Doodle</string>
+    <string name="app_name">ECoach</string>
     <string name="mosaic">马赛克</string>
     <string name="scale_gesture_item">手势缩放</string>
     <string name="guide">涂鸦入门</string>
